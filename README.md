@@ -89,7 +89,7 @@ The problem with using the above method is that there is no way to predict the r
 
 Using an algorithmic approach the need for a large expiry gap between object and cache can be eliminated.
 
-This implementation uses an algorithm taken from the research paper titled '[Optimal Probabilistic Cache Stampede Prevention](http://cseweb.ucsd.edu/~avattani/papers/cache_stampede.pdf)' by Andrea Vattani, Flavio Chierichetti and Keegan Lowenstein.
+This implementation uses an algorithm taken from the research paper titled '[Optimal Probabilistic Cache Stampede Prevention](cache_stampede.pdf)' by Andrea Vattani, Flavio Chierichetti and Keegan Lowenstein.
 
 The algorythm takes into account the time needed for regeneration (delta), along with the ability to favor early regeneration (beta) which allows cache regeneration to be performed in the most optimal manner.
 
