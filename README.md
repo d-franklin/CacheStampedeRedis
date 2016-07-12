@@ -10,6 +10,8 @@ Also this solution is not designed to reduce data regeneration requests to an ab
 
 Instead it will allow multiple regeneration requests to be made while reducing the number of requests to an acceptable level and avoiding cache stampede.
 
+NOTE: At the time of writting (2016/07/12) StackExchange.Redis.Extensions.Core doesn't accept IConnectionMultiplexer as a parameter for StackExchangeRedisCacheClient contructor. So while you can pass IConnectionMultiplexer it will be cast to ConnectionMultiplexer.
+
 #### About
 
 ##### Cache Stampede
